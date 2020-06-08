@@ -31,7 +31,7 @@ public class TestCalculator {
 	@Test
 	public void handleNewLinebetweenNumber()
 	{
-		assertEquals(10,Calculator.add("1\n2\n3\n4"));
+		assertEquals(15,Calculator.add("1\n2,3"));
 	}
 
 }

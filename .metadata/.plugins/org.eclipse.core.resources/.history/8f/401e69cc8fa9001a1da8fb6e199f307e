@@ -28,10 +28,5 @@ public class TestCalculator {
 	{
 		assertEquals(15,Calculator.add("1,2,3,4,5"));
 	}
-	@Test
-	public void handleNewLinebetweenNumber()
-	{
-		assertEquals(10,Calculator.add("1\n2\n3\n4"));
-	}
 
 }

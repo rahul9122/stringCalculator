@@ -8,9 +8,9 @@ public class Calculator {
 		{
 			return 0;
 		}
-		else 
+		else if (num.contains(","))
 		{
-			String [] oneAndTwoNumber= num.split(",|\n");
+			String [] oneAndTwoNumber= num.split(",");
 			int sum=0;
 			for(String str:oneAndTwoNumber)
 			{
@@ -19,7 +19,10 @@ public class Calculator {
 			
 			return sum;
 		}
-		
+		else
+		{
+			return Integer.parseInt(num);
+		}
 	}
 	
 	public static int convertToInt(String str)
@@ -33,7 +36,6 @@ public class Calculator {
 		System.out.println(add("5"));
 		System.out.println(add("2,4"));
 		System.out.println(add("1,2,3,4,5"));
-		System.out.println(add("1\n2\n3\n4\n5"));
 	}
 
 }

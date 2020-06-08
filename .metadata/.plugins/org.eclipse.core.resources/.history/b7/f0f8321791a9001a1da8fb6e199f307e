@@ -8,7 +8,7 @@ public class Calculator {
 		{
 			return 0;
 		}
-		else 
+		else if (num.contains(","))
 		{
 			String [] oneAndTwoNumber= num.split(",|\n");
 			int sum=0;
@@ -19,7 +19,10 @@ public class Calculator {
 			
 			return sum;
 		}
-		
+		else
+		{
+			return Integer.parseInt(num);
+		}
 	}
 	
 	public static int convertToInt(String str)
