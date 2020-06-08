@@ -51,7 +51,7 @@ public class TestCalculator {
 		}
 		catch(RuntimeException e)
 		{
-			assertEquals("Negative number not allowed:[-2, -4]",e.getMessage());	
+			assertEquals("Negative number not allowed:[-2, -4]",e.getMessage()");	
 		}
 	}
 

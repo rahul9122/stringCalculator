@@ -1,6 +1,5 @@
 package stringCalculator;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,29 +15,13 @@ public class Calculator {
 		else 
 		{
 			String [] oneAndTwoNumber= tokenize(num);
-			List<Integer> numbers = new ArrayList();
+			List<Integer> numbers;
 			int sum=0;
-			int n;
 			for(String str:oneAndTwoNumber)
 			{
-			 n=convertToInt(str);
-				sum=sum+n;
-						
-				numbers.add(n);
+				sum=sum+convertToInt(str);
 			}
-			List<Integer> negtivenumbers = new ArrayList();
-			for(int i:numbers)
-			{
-				if(i<0)
-				{
-					 negtivenumbers.add(i);
-					
-				}
-			}
-			if(negtivenumbers.size()>0)
-			{
-				throw new RuntimeException("Negative number not allowed:"+negtivenumbers.toString());
-			}
+			
 			return sum;
 		}
 		
@@ -77,8 +60,6 @@ public class Calculator {
 		System.out.println(add("1\n2\n3\n4\n5"));
 		
 		System.out.println(add("//;\n1;2"));
-		System.out.println(add("-2,-4"));
-
 	}
 
 }

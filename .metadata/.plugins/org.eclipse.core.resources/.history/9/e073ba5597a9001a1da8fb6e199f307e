@@ -2,7 +2,6 @@ package stringCalculator;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 public class TestCalculator {
 	
@@ -39,20 +38,6 @@ public class TestCalculator {
 	public void customDeliminator()
 	{
 		assertEquals(3,Calculator.add("//;\n1;2"));
-	}
-	
-	@Test
-	public void negativeNumberException()
-	{
-		try
-		{
-			Calculator.add("-2,-4,3");
-			fail("Exception is expected");
-		}
-		catch(RuntimeException e)
-		{
-			assertEquals("Negative number not allowed:[-2, -4]",e.getMessage());	
-		}
 	}
 
 }

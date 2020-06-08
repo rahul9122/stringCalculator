@@ -46,12 +46,12 @@ public class TestCalculator {
 	{
 		try
 		{
-			Calculator.add("-2,-4,3");
+			Calculator.add("-1,2,3");
 			fail("Exception is expected");
 		}
-		catch(RuntimeException e)
+		catch(Exception e)
 		{
-			assertEquals("Negative number not allowed:[-2, -4]",e.getMessage());	
+			assertEquals("Negatives not allowed: -1",e.getMessage());	
 		}
 	}
 
