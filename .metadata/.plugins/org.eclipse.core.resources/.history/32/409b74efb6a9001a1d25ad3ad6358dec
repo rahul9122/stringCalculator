@@ -6,11 +6,6 @@ import static org.junit.Assert.fail;
 
 public class TestCalculator {
 	
-	//these test cases are only valid for int value data type
-	// these test case a only valid for single character type delimiter like {.} {,} {,,} {,}{%} 
-	//not for {.,} and {,%} delimiter
-	//these test cases are only valid for trim string with only integer value as characters
-	//these test cases are only valid to calculate sum within range of int data datatype limit 
 	@Test
 	public void emptyStringReturn0()
 	{
@@ -20,7 +15,7 @@ public class TestCalculator {
 	@Test
 	public void numberOfLengthOne()
 	{
-		assertEquals(3, Calculator.add("3"));
+		assertEquals(1, Calculator.add("1"));
 	}
 	
 	@Test
