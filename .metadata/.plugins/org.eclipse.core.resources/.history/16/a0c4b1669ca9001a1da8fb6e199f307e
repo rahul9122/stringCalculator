@@ -67,7 +67,7 @@ public class Calculator {
 		Matcher match = Pattern.compile("//(.*)\n(.*)").matcher(num);
 		match.matches();
 		String customdeliminater=match.group(1);
-		
+		System.out.println(customdeliminater);
 		String arrayOfNumber=match.group(2);
 		return arrayOfNumber.split(Pattern.quote(customdeliminater));
 	}
@@ -85,7 +85,7 @@ public class Calculator {
 		System.out.println(add("1,2,3,4,5"));
 		System.out.println(add("1\n2\n3\n4\n5"));
 		
-		System.out.println(add("//;\n1;2"));
+		System.out.println(add("//;;\n1;;2"));
 		System.out.println(add("2,4,1000,2000"));
 		
 

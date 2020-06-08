@@ -67,7 +67,7 @@ public class Calculator {
 		Matcher match = Pattern.compile("//(.*)\n(.*)").matcher(num);
 		match.matches();
 		String customdeliminater=match.group(1);
-		
+		System.out.println(customdeliminater);
 		String arrayOfNumber=match.group(2);
 		return arrayOfNumber.split(Pattern.quote(customdeliminater));
 	}

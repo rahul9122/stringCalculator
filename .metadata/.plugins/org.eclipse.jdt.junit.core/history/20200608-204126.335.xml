@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCalculator" project="StringCalculator" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="stringCalculator.TestCalculator" time="0.0">
+    <testcase name="emptyStringReturn0" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="addUnknownAmountOfNumber" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="numberOfLengthOne" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="ignoreNumberGreaterThan1000" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="customDeliminator" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="handleNewLinebetweenNumber" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="negativeNumberException" classname="stringCalculator.TestCalculator" time="0.0"/>
+    <testcase name="sumOfNumberSeperatedByComma" classname="stringCalculator.TestCalculator" time="0.0"/>
+  </testsuite>
+</testrun>

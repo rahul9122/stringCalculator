@@ -64,12 +64,11 @@ public class Calculator {
 	}
 	public static String[] customDeliminater(String num)
 	{
-		Matcher match = Pattern.compile("//(.*)\n(.*)").matcher(num);
+		Matcher match = Pattern.compile("//(.)\n(.*)").matcher(num);
 		match.matches();
 		String customdeliminater=match.group(1);
-		
 		String arrayOfNumber=match.group(2);
-		return arrayOfNumber.split(Pattern.quote(customdeliminater));
+		return arrayOfNumber.split(customdeliminater);
 	}
 	
 	public static int convertToInt(String str)
