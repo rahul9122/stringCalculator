@@ -33,11 +33,5 @@ public class TestCalculator {
 	{
 		assertEquals(10,Calculator.add("1\n2\n3\n4"));
 	}
-	
-	@Test
-	public void customDeliminator()
-	{
-		assertEquals(3,Calculator.add("//;\n1;2"));
-	}
 
 }
