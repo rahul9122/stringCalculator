@@ -1,0 +1,14 @@
+package stringCalculator;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class TestCalculator {
+	
+	@Test
+	public void emptyStringReturn0()
+	{
+		assetEquals(0,"");
+	}
+
+}
